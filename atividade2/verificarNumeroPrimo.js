@@ -8,11 +8,11 @@ function verificarNumeroPrimo(n){
     if (n <= 3){
         return true;
     }
-    if (n % 2 == 0 || n % 3 == 0){
+    if (n % 2 == 0){
         return false;
     }
-    for(let i = 5; i * i < n; i += 6){
-        if(n % i == 0||n % (i+2) == 0){
+    for(let i = 3; i < n; i += 2){
+        if(n % i == 0){
             return false;
         }
     }
@@ -28,5 +28,5 @@ console.log(verificarNumeroPrimo(83)); //true
 console.log(verificarNumeroPrimo(100)); //false
 console.log(verificarNumeroPrimo(991)); //true
 console.log(verificarNumeroPrimo(104729)); //true
-console.log(verificarNumeroPrimo(14348907)); //false
+console.log(verificarNumeroPrimo(14348907)); //falsee
 
