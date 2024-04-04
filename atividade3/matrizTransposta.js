@@ -7,7 +7,7 @@ function transporMatriz(A) {
         console.log(A[i].join(' '));
     }
 
-    console.log("\nMatriz Transposta:");
+    console.log("Matriz Transposta:");
     for (let i = 0; i < A[0].length; i++) {
         let linhaTransposta = [];
         for (let j = 0; j < A.length; j++) {
