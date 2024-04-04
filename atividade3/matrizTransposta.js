@@ -4,7 +4,7 @@ A função deve receber uma matriz (array de arrays) A e imprimir a matriz origi
 function transporMatriz(A) {
     console.log("Matriz Original:");
     for (let i = 0; i < A.length; i++) {
-        console.log(A[i].join('\t'));
+        console.log(A[i].join(' '));
     }
 
     console.log("\nMatriz Transposta:");
@@ -13,7 +13,7 @@ function transporMatriz(A) {
         for (let j = 0; j < A.length; j++) {
             linhaTransposta.push(A[j][i]);
         }
-        console.log(linhaTransposta.join('\t'));
+        console.log(linhaTransposta.join(' '));
     }
 }
 
