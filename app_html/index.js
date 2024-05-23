@@ -6,9 +6,8 @@ app.engine('html', mustacheExpress());
 app.set('view engine','html');
 app.set('views',__dirname + '/views')
 
-app.get('/', function(req,res){
-    res.render('index.html');
-});
+app.use(express.urlencoded({extended: true}))
+app.use('/', require('./routes/calculadoraRoutes'))
 
 const PORT = 8080;
 app.listen(PORT, function(){
